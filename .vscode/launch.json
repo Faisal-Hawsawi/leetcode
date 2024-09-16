@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": false,
       "cwd": "/home/jokar/faisal/leetcode",
-      "program": "/home/jokar/faisal/leetcode/build/Debug/outDebug",
+      "program": "/home/jokar/faisal/leetcode/run-sul",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
