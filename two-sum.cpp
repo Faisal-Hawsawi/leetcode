@@ -38,6 +38,7 @@ void quick_sort(vector<int>& num_list, int low, int high){
 vector<int> twoSum(vector<int>& nums, int target) {
 
     vector<int> ans;
+    ans.reserve(10);
     unordered_map<int, vector<int>> num_to_pos;
     int size = nums.size();
 
@@ -74,12 +75,14 @@ vector<int> twoSum(vector<int>& nums, int target) {
         int is_equal_to_target = add1 + add2;
         if (is_equal_to_target == target){
             for (int pos : num_to_pos[add1] ){
-                ans.push_back(pos);
+                // ans.push_back(pos);
+                ans.emplace_back(pos);
             }
 
             if (add1 != add2){
                 for (int pos : num_to_pos[add2] ){
-                    ans.push_back(pos);
+                    // ans.push_back(pos);
+                    ans.emplace_back(pos);
                 }
             }
             end--;
